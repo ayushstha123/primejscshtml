@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(0, 158, 0);
+}
+.heading1{
+text-align: center;
+  padding: 100px;
+}
+.div3{
+  width: 300px;
+  background-color: rgba(90, 255, 90, 0.781);
+  padding: 30px;
+}
+.div2{
+background-color: white;
+width: 300px;
+
+}

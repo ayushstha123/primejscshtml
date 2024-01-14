@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+.container {
+  display: flex; /* This sets the container as a flex container */
+  /* Additional flex properties can be applied to control the container's behavior */
+  flex-direction: row; /* Items will be laid out horizontally (row) */
+  justify-content:space-between; /* Items will be spaced evenly along the main axis */
+  align-items: center; /* Items will be centered along the cross axis */
+  /* You can use other flex properties based on your layout requirements */
+}
+@media (max-width:400px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+.item {
+  /* Individual items will be styled here */
+  padding: 10px;
+  border: 1px solid black;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+</body>
+</html>
