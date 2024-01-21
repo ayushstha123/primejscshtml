@@ -125,5 +125,39 @@ text-align: left
 }
 
 /* service css starts here */
-
+.services h2{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.service-box{
+    flex: 1 1 20rem ;/* flex-grow flex-shrink initail size */
+    background-color: orange;
+    padding: 3rem 2rem 4rem ;
+    border-radius: 2rem;
+    text-align: center;
+    transition: 0.5s ease;
+}
+.service-box:hover{
+    border-color: white;
+    background-color: rgb(158, 158, 158);
+    transform:scale(1.02);
+}
+.service-box i{
+    font-size: 5rem;
+    color: white;
+}
+.service-box h3{
+    font-size: 1rem;
+}
+.service-box p{
+    font-size: 0.8rem;
+    margin: 1rem 0 3rem;
+}
 
