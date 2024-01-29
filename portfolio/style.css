@@ -161,3 +161,112 @@ text-align: left
     margin: 1rem 0 3rem;
 }
 
+/* portfolio starts here  */
+.portfolio{
+    background-color: white;
+}
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);    /* 3 column 1fraction */
+    align-items: center;
+    gap: 2.5rem;
+}
+.portfolio-box{
+    position: relative;
+    height: 100%;
+    border-radius: 1rem;
+    box-shadow:0 0 1rem black;
+    overflow: hidden;
+    display: flex;
+}
+.portfolio-box img{
+    width: 100%;
+    transition: 0.5s ease;
+}
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+.portfolio-layer{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.1),black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+.portfolio:hover .portfolio-layer{
+    transform: translateY(0);
+}
+.portfolio-layer h4{
+    font-size: 2rem;
+}
+.portfolio-layer p{
+    font-size: 1rem;
+    margin: 0.3rem 0 1rem;
+    text-align: center;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.portfolio-layer a i{
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+
+
+
+
+
+
+/* contact css starts here */
+.contact h2{
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+.contact form{
+    max-width: 60rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    border: none;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: black;
+    background-color: rgb(255, 250, 198);
+    border-radius: 0.8rem;
+    margin:  0.7rem 0;
+}
+.contact form .input-box input{
+    width:49%;
+}
+.contact form textarea{
+resize: none;
+}
