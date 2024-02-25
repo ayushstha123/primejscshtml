@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+<style>
+     body{
+    background-color: rgb(181, 255, 255);
+    font-family: 'Poppins', sans-serif;
+ }
+ .container{
+    width: 360px;
+    padding: 33px;
+    text-align: center;
+    margin-left: 33%;
+    margin-top: 5px;
+ }
+ input:focus{
+    outline: none;
+ }
+ input{
+    border-radius: 3px solid white;
+    border-style:dashed;
+    border-radius: 10px;
+    width: 270px;
+    padding: 8px;
+    font-size: 19px;
+ }
+ button{
+    border-radius: 10px;
+    width: 60px;
+    height: 41px;
+    background-color: rgb(40, 255, 54);
+    color: rgb(253, 253, 253);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 19px;
+ }
+ .text ul{
+    position: relative;
+    background-color: rgb(2, 170, 170);
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    padding: 7px;
+    text-align: left;
+ }
+span{
+padding:10px;
+ }
+ .text ul i{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+ }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>MY TODO</h1>
+        <div class="inputs">
+            <input type="text" placeholder="Enter Your Task" id="inp">
+            <button onclick="Add()">Add</button>
+        </div>
+        <div class="text">
+
+        </div>
+    </div>
+
+   
+</body>
+
+</html>
